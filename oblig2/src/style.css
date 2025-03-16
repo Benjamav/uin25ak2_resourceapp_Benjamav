@@ -1,0 +1,56 @@
+/* gir oss mulighet til å bruke hele siden */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Sørger for at feltet strekker seg til sin fulle høyde */
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* styling av navigasjons bar */
+nav {
+    display: flex;
+   
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Styling av navigasjons faner */
+nav span {
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #E1E5EE;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* utheving av activeTab */
+nav span.active {
+    background: #2A324B;
+    color: white;
+}
+
+/* Lar content seksjonen ta bruk av resten av siden */
+section {
+    flex-grow: 1;
+    width: 80%;
+    max-width: 900px;
+    background: #1E2538;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
